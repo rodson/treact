@@ -1,7 +1,7 @@
 // @flow
 
 export type VNode = {
-  nodeName: string,
+  nodeName: string | Function,
   attributes: Object,
   children: VNode
 }

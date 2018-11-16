@@ -2,13 +2,13 @@
 import type { VNode } from './types';
 
 /**
- * @param  {string} nodeName Element's name
+ * @param  {string | function} nodeName Element's name
  * @param  {object} attributes Key/value set of the element
  * @param  {...VNode} children Element's children
  * @return {object}
  */
 export function createElement(
-	nodeName: string,
+	nodeName: string | Function,
 	attributes: Object,
 	...children: VNode
 ): Object {
